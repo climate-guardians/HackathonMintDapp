@@ -18,6 +18,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import Cards from "components/Cards/Cards";
+import CardDetails from "components/Cards/CardDetails";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -112,6 +114,12 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/contract">
               <Contract />
+            </Route>
+            <Route path="/cards">
+              <Cards />
+            </Route>
+            <Route path="/details" >
+              <CardDetails />
             </Route>
             <Route path="/">
               <Redirect to="/quickstart" />
