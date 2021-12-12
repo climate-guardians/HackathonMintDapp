@@ -1,0 +1,13 @@
+{
+    "description": "Guarana Tree Description", 
+    "image": "ipfs link to 2D model",
+   "animation_url": "ipfs link to 3D model",
+    "name": "Guarana Tree Lvl 1",
+    "attributes": [ 
+        {
+            "trait_type": "Sticky shot lvl", 
+            "value": 5
+        }
+   ]
+  } 
+  
