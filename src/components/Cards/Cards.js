@@ -3,7 +3,7 @@ import "./Cards.css";
 import { Route, Link } from "react-router-dom";
 import CardDetails from "./CardDetails";
 import {Helmet} from "react-helmet";
-import { Banner } from "../Banner"
+
 
 function Cards() {
  
