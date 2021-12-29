@@ -20,6 +20,8 @@ import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import Cards from "components/Cards/Cards";
 import CardDetails from "components/Cards/CardDetails";
+import { Guardians } from "./components/Guardians";
+import { Game } from "./components/Game";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -78,6 +80,7 @@ const App = ({ isServerInfo }) => {
             <Account />
           </div>
         </Header>
+        
 
         <div style={styles.content}>
           <Switch>
@@ -117,6 +120,12 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/cards">
               <Cards />
+            </Route>
+            <Route path="/guardians">
+              <Guardians />
+            </Route>
+            <Route path="/game">
+              <Game />
             </Route>
             <Route path="/details" >
               <CardDetails />

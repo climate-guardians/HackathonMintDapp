@@ -3,6 +3,7 @@ import "./Cards.css";
 import { Route, Link } from "react-router-dom";
 import CardDetails from "./CardDetails";
 import {Helmet} from "react-helmet";
+import { Banner } from "../Banner"
 
 function Cards() {
  
@@ -14,10 +15,12 @@ function Cards() {
   );
 
   return (
+    <>
     <div className="cards-container">
       <Helmet>
         <title>Cards</title>
       </Helmet>
+      
       {images.map((i) => (
         <div key={i.default}>
           <Link to={"/details" + i.default}>
@@ -29,6 +32,7 @@ function Cards() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

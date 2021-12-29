@@ -18,7 +18,9 @@
 .cards-container img:hover {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: rgb(139, 139, 238);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(23, 105, 21);
   cursor: pointer;
   transform: scale(1.08);
   transition: transform 0.3s;
