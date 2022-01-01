@@ -1,5 +1,5 @@
 import React from "react";
-import "./Cards.css";
+import "../../style.css";
 import { Route, Link } from "react-router-dom";
 import CardDetails from "./CardDetails";
 import {Helmet} from "react-helmet";

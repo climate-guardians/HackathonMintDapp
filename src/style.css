@@ -18,3 +18,56 @@
   overflow: auto;
   border-radius: 1rem;
 }
+
+/* cards */
+.cards-container {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 50px;
+}
+.cards {
+  border: 1px solid;
+  margin-right: 10px;
+  height: 250px;
+  width: 200px;
+}
+
+.cards-name {
+  text-align: center;
+}
+
+.cards-container img:hover {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(23, 105, 21);
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: transform 0.3s;
+}
+
+.card-details {
+  margin: 20px 250px;
+  box-shadow: 6px 8px 5px 3px #dee8e0;
+}
+.card-details img {
+  width: 150px;
+}
+.card-details span {
+  font-weight: 900;
+  color: rgb(34, 31, 31);
+}
+.card-details a {
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+}
+.card-details a:hover {
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 0.3s;
+  color: red;
+}
+

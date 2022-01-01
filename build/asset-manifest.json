@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ae93752.chunk.css",
+    "main.js": "/static/js/main.db258fb6.chunk.js",
+    "main.js.map": "/static/js/main.db258fb6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d64f98a8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d64f98a8.js.map",
+    "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
+    "static/js/2.c7ba4aa7.chunk.js": "/static/js/2.c7ba4aa7.chunk.js",
+    "static/js/2.c7ba4aa7.chunk.js.map": "/static/js/2.c7ba4aa7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.6ae93752.chunk.css.map": "/static/css/main.6ae93752.chunk.css.map",
+    "static/js/2.c7ba4aa7.chunk.js.LICENSE.txt": "/static/js/2.c7ba4aa7.chunk.js.LICENSE.txt",
+    "static/media/cg-banner.b5e3727e.png": "/static/media/cg-banner.b5e3727e.png",
+    "static/media/curupira.e7a78720.png": "/static/media/curupira.e7a78720.png",
+    "static/media/guarana.png": "/static/media/guarana.efa6e45f.png",
+    "static/media/mapple-tree.png": "/static/media/mapple-tree.4fcdc2c3.png",
+    "static/media/naiara.1a51eaf3.png": "/static/media/naiara.1a51eaf3.png",
+    "static/media/oak.png": "/static/media/oak.d0b6329d.png",
+    "static/media/orange-tree.png": "/static/media/orange-tree.e3607ab0.png",
+    "static/media/palm.png": "/static/media/palm.05b99602.png",
+    "static/media/politician.2ce280cb.png": "/static/media/politician.2ce280cb.png",
+    "static/media/prince.png": "/static/media/prince.aab8517d.png",
+    "static/media/princess.png": "/static/media/princess.8d6bbb10.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d64f98a8.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.c7ba4aa7.chunk.js",
+    "static/css/main.6ae93752.chunk.css",
+    "static/js/main.db258fb6.chunk.js"
+  ]
+}
