@@ -1,0 +1,11 @@
+{
+  "name": "climateContracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Coups",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1",
+    "@truffle/hdwallet-provider": "^2.0.0"
+  }
+}
