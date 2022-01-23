@@ -1,6 +1,6 @@
 import image from "../img/cg-banner.png"; 
 
-function Banner() {
+export default function Banner() {
   return (
     <>
     <div style={{ 
@@ -15,5 +15,3 @@ function Banner() {
     </>
   );
 }
-
-export { Banner };

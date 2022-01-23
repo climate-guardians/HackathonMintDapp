@@ -1,9 +1,8 @@
 import React from "react";
 import "../../style.css";
 import { Route, Link } from "react-router-dom";
-import CardDetails from "./CardDetails";
+import CardDetails from "./CardDetails"; 
 import {Helmet} from "react-helmet";
-
 
 function Cards() {
  

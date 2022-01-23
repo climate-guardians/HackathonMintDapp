@@ -1,11 +1,12 @@
-import { Banner } from "./Banner"
+import EmblaCarousel from "./EmblaCarousel";
 
-function Game() {
+function Game(slides) {
   return (
+    
     <div>
-      <Banner />
+      <EmblaCarousel slides={slides}/>
     </div>
-  );
+  )
 }
 
 export { Game };
