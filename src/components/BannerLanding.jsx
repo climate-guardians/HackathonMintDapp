@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Container, Box, Heading, Text, Link } from 'theme-ui';
-import { Typography, Button, Modal } from "antd";
+import React from 'react';
+import { Container, Box, Heading, Text } from 'theme-ui';
+import { Button, Modal } from "antd";
 import { SelectOutlined } from "@ant-design/icons";
 import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
 import BannerImage from "../img/curupira.png";
@@ -8,6 +8,7 @@ const BANNER_DATA = {
   title: 'Welcome to Climate Guardians',
   text:
     'The play and earn Game with real world impact on Climate Change.',
+  subtitle: 'Save the Amazon',
   button: {
     link: '#',
     label: 'Save the Amazon',
@@ -19,7 +20,7 @@ const BANNER_DATA = {
   bannerImage: BannerImage,
 };
 
-const { Title } = Typography;
+// const { Title } = Typography;
 
 export default function BannerLanding() {
 
@@ -55,7 +56,7 @@ export default function BannerLanding() {
   }
 
 
-  const { title, text } = BANNER_DATA;
+  const { title, text, subtitle } = BANNER_DATA;
   
   return (
     <Box as="section" id="banner" sx={styles.section}>
@@ -65,7 +66,7 @@ export default function BannerLanding() {
           <Text as="p">{text}</Text>
           <Box sx={styles.btnWrap}>
             <div>
-            <Heading as="h1">Save the Amazon</Heading>
+            <Heading as="h1">{subtitle}</Heading>
               <Button shape="round" onClick={() => donation(0.1)}>Donate 0.1 ETH</Button>
               <a 
               href={`https://rinkeby.etherscan.io/address/0xCc4D0600885c69Fdba19De5A54957dF939459254`}

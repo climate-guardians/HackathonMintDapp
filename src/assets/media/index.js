@@ -14,7 +14,11 @@ import media12 from "./12.png";
 import media13 from "./13.png";
 import media14 from "./14.png";
 import media15 from "./15.png";
+import media16 from "./16.png";
+import media17 from "./17.png";
+import media18 from "./18.png";
+import media19 from "./19.png";
+import media20 from "./20.png";
 
-
-export const media = [media1, media2, media3, media4, media5, media6, media7, media8, media9, media10, media11, media12, media13, media14, media15];
+export const media = [media0, media1, media2, media3, media4, media5, media6, media7, media8, media9, media10, media11, media12, media13, media14, media15, media16, media17, media18, media19, media20];
 export const mediaByIndex = index => media[index % media.length];
