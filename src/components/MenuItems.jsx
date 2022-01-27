@@ -30,9 +30,9 @@ function MenuItems() {
       <Menu.Item key="/game">
         <NavLink to="/game">⚔️ Battle</NavLink>
       </Menu.Item>
-      {/* <Menu.Item key="/wallet">
-        <NavLink to="/wallet">👛 Wallet</NavLink>
-      </Menu.Item> */}
+      <Menu.Item key="/rewards">
+        <NavLink to="/rewards">💰 Rewards</NavLink>
+      </Menu.Item>
       {/* <Menu.Item key="onramp">
         <NavLink to="/onramp">💵 Fiat</NavLink>
       </Menu.Item>

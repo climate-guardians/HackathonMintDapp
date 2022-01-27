@@ -602,16 +602,16 @@ export default function Guardians() {
 
   return (
     <div>
-         <div className="site-card-wrapper">
+      <div className="site-card-wrapper">
         <Row gutter={16}>
-          <Col span={8}>
-            <Card 
-            title="Curupira" 
+        <Col span={8}>
+            <Card title="Politician" 
             bordered={false}
+            style={{ height: 800, border: "2px solid #e7eaf3" }}
             hoverable
-            cover={<img alt="Curupira"  src= {Curupira} />}
-            > 
-            <Button onClick={() => mintCurupira(0.1)} type="primary">Mint & Play</Button>
+            cover={<img alt="Politician"  src= {Politician} />}
+            >
+              <Button onClick={() => mintCurupira(0.1)} type="primary">Mint & Play</Button>
               <div style={{ marginBottom: "10px" }}>
                 <a 
                   href={`https://rinkeby.etherscan.io/address/0x190C5D8838072396A75B8cBA622a2C943c29fa08`}
@@ -621,6 +621,47 @@ export default function Guardians() {
                   <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
                   View on Etherscan
                 </a>
+                <div style={{ marginBottom: "10px" }}>
+                <a 
+                  href={`https://testnets.opensea.io/assets/0x190C5D8838072396A75B8cBA622a2C943c29fa08/2`}
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  View on OpenSea
+                </a>
+                </div>
+              </div>
+            </Card>
+          </Col>
+        <Col span={8}>
+            <Card 
+            title="Curupira" 
+            bordered={false}
+            style={{ height: 800, border: "2px solid #e7eaf3" }}
+            hoverable
+            cover={<img alt="Curupira"  src= {Curupira} />}
+            > 
+            <Button onClick={() => mintCurupira(0.1)} type="primary">Mint & Play</Button>
+              <div style={{ marginBottom: "10px" }}>
+                <a 
+                  href={`https://testnets.opensea.io/assets/0x190c5d8838072396a75b8cba622a2c943c29fa08/0`}
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  View on Etherscan
+                </a>
+              </div>
+              <div style={{ marginBottom: "10px" }}>
+                <a 
+                  href={`https://testnets.opensea.io/assets/0x190C5D8838072396A75B8cBA622a2C943c29fa08/2`}
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  View on OpenSea
+                </a>
               </div>
             </Card>
           </Col>
@@ -628,18 +669,30 @@ export default function Guardians() {
             <Card title="Naiara" 
             bordered={false}
             hoverable
+            style={{ height: 800, border: "2px solid #e7eaf3" }}
             cover={<img alt="Naiara"  src= {Naiara} />}
             >
               <Button type="primary">Mint & Play</Button>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card title="Politician" 
-            bordered={false}
-            hoverable
-            cover={<img alt="Politician"  src= {Politician} />}
-            >
-              <Button onClick={() => mintCurupira(0.1)} type="primary">Mint & Play</Button>
+            <div style={{ marginBottom: "10px" }}>
+              <a 
+                href={`https://testnets.opensea.io/assets/0x190c5d8838072396a75b8cba622a2c943c29fa08/1`}
+                target="_blank"
+                rel="noreferrer"
+                >
+                <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                View on Etherscan
+              </a>
+            </div>
+            <div style={{ marginBottom: "10px" }}>
+                <a 
+                  href={`https://testnets.opensea.io/assets/0x190C5D8838072396A75B8cBA622a2C943c29fa08/2`}
+                  target="_blank"
+                  rel="noreferrer"
+                  >
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  View on OpenSea
+                </a>
+              </div>
             </Card>
           </Col>
         </Row>

@@ -1,6 +1,6 @@
 import EmblaCarousel from "./EmblaCarousel";
 
-function Game(slides) {
+function Rewards(slides) {
   return (
     
     <div>
@@ -9,4 +9,4 @@ function Game(slides) {
   )
 }
 
-export { Game };
+export { Rewards };

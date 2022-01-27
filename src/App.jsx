@@ -22,6 +22,7 @@ import Cards from "components/Cards/Cards";
 import CardDetails from "components/Cards/CardDetails";
 import { Guardians } from "./components/Guardians";
 import { EmblaCarousel } from "./components/EmblaCarousel";
+import UnityForest from "components/WebGl/UnityForest";
 const { Header, Footer } = Layout;
 
 const SLIDE_COUNT = 20;
@@ -128,6 +129,9 @@ const App = ({ isServerInfo }) => {
               <Guardians />
             </Route>
             <Route path="/game">
+              <UnityForest />
+            </Route>
+            <Route path="/rewards">
               <EmblaCarousel slides={slides}/>
             </Route>
             <Route path="/details" >

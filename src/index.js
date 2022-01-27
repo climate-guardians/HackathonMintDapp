@@ -20,7 +20,7 @@ const Application = () => {
   if (isServerInfo)
     return (
       <MoralisProvider appId={APP_ID} serverUrl={SERVER_URL}>
-        <Provider store={store}>
+        <Provider store={store}> 
           <App isServerInfo />
         </Provider>
       </MoralisProvider>
@@ -36,7 +36,7 @@ const Application = () => {
 
 ReactDOM.render(
   // <React.StrictMode>
-  <Application />,
+    <Application />,
   // </React.StrictMode>,
   document.getElementById("root")
 );
