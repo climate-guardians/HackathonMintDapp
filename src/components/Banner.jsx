@@ -1,4 +1,4 @@
-import image from "../img/cg-banner.png"; 
+import image from "../img/cg-banner.png";
 
 export default function Banner() {
   return (
@@ -10,7 +10,6 @@ export default function Banner() {
       backgroundSize:"contain",
       height:'40vw',
       width: '90vw' }}>
-      Hello Climate Guardians!
     </div>
     </>
   );

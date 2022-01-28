@@ -1,10 +1,52 @@
-import { Button, Card, Col, Row } from 'antd';
+import { Button, Card, Col, Row, Typography } from 'antd';
 import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
 import { SelectOutlined } from "@ant-design/icons";
 // import climateHeroAbi from "../contracts/ClimateHero";
 import Curupira from "../img/curupira.png";
 import Naiara from "../img/naiara.png";
 import Politician from "../img/politician.png";
+
+const { Title, Paragraph } = Typography;
+
+const styles = {
+  content: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "archivo",
+    fontSize: "20px",
+    color: "#041836",
+    marginTop: "10px",
+    padding: "15px",
+  },
+  header: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "archivo",
+    fontSize: "36px",
+    letterSpacing: '-1.5px',
+    fontWeight: '500',
+    borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
+    padding: "0 10px",
+  },
+  headerRight: {
+    display: "flex",
+    gap: "20px",
+    alignItems: "center",
+    fontSize: "15px",
+    fontWeight: "600",
+    letterSpacing: '-1.5px',
+  },
+  subheader: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "archivo",
+    fontSize: "28px",
+    color: "#041836",
+    marginTop: "10px",
+    padding: "5px",
+  },
+};
 
 export default function Guardians() {
   const { Moralis } = useMoralis();
@@ -602,12 +644,37 @@ export default function Guardians() {
 
   return (
     <div>
+    <Typography>
+    <Title style={styles.header}>Mint & Play Protector or Villain</Title>
+    <Row gutter={16}>
+    <Col span={8}>
+    <Title style={styles.subheader}>Bolso</Title>
+    <Paragraph style={styles.content}>
+    Land grabbing villain who only loves the smell of money. His goal is simple but evil: destroy the Amazon and make as much money as humanly possible. His evil corporations are a force to be reckoned with.
+    </Paragraph>
+    
+    </Col>
+    <Col span={8}>
+    <Title style={styles.subheader}>Curupira</Title>
+    <Paragraph style={styles.content}>
+    Curupira is the mythological protector of the Amazon. His battlecry gathers the animals of the forest for help. Together they defend the Amazon against evil corporations. Lumberjacks tremble with fear when they hear Curupira's battlecry!
+    </Paragraph>
+    </Col>
+    <Col span={8}>
+    <Title style={styles.subheader}>Naiara</Title>
+    <Paragraph style={styles.content}>
+    A girl from a nearby village, fighting to protect the Amazon she loves so much. Has an affinity to plants most people consider weeds. Naiara stops bulldozers in their tracks with her Ivy Trap.
+    </Paragraph>
+    </Col>
+    </Row>
+    </Typography>
+
       <div className="site-card-wrapper">
         <Row gutter={16}>
         <Col span={8}>
-            <Card title="Politician" 
+            <Card title="Bolso" 
             bordered={false}
-            style={{ height: 800, border: "2px solid #e7eaf3" }}
+            style={{ border: "2px solid #e7eaf3" }}
             hoverable
             cover={<img alt="Politician"  src= {Politician} />}
             >
@@ -627,7 +694,7 @@ export default function Guardians() {
                   target="_blank"
                   rel="noreferrer"
                   >
-                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "0px" }} />
                   View on OpenSea
                 </a>
                 </div>
@@ -638,7 +705,7 @@ export default function Guardians() {
             <Card 
             title="Curupira" 
             bordered={false}
-            style={{ height: 800, border: "2px solid #e7eaf3" }}
+            style={{ border: "2px solid #e7eaf3" }}
             hoverable
             cover={<img alt="Curupira"  src= {Curupira} />}
             > 
@@ -659,7 +726,7 @@ export default function Guardians() {
                   target="_blank"
                   rel="noreferrer"
                   >
-                  <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
+                  <SelectOutlined style={{ marginRight: "5px", marginTop: "0px" }} />
                   View on OpenSea
                 </a>
               </div>
@@ -669,7 +736,7 @@ export default function Guardians() {
             <Card title="Naiara" 
             bordered={false}
             hoverable
-            style={{ height: 800, border: "2px solid #e7eaf3" }}
+            style={{ border: "2px solid #e7eaf3" }}
             cover={<img alt="Naiara"  src= {Naiara} />}
             >
               <Button type="primary">Mint & Play</Button>
@@ -700,8 +767,6 @@ export default function Guardians() {
     </div>
   );
 }
-
-
 
 export { Guardians };
 

@@ -1,6 +1,51 @@
 import { Fragment, useEffect, useState } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
 import { useMoralis } from "react-moralis";
+import { Typography} from 'antd';
+
+const { Title, Paragraph } = Typography;
+
+const styles = {
+  content: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "archivo",
+    fontSize: "20px",
+    color: "#041836",
+    marginTop: "10px",
+    padding: "15px",
+  },
+  header: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "archivo",
+    fontSize: "36px",
+    letterSpacing: '-1.5px',
+    fontWeight: '500',
+    borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
+    padding: "0 10px",
+  },
+  headerRight: {
+    display: "flex",
+    gap: "20px",
+    alignItems: "center",
+    fontSize: "15px",
+    fontWeight: "600",
+    letterSpacing: '-1.5px',
+  },
+  subheader: {
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "archivo",
+    fontSize: "28px",
+    color: "#041836",
+    marginTop: "10px",
+    padding: "5px",
+  },
+};
 
 const unityContext = new UnityContext({
   loaderUrl: "../public/forestBuild/forestUnity.loader.js",
@@ -57,13 +102,14 @@ function UnityForest() {
     <Fragment>
       <div className="wrapper">
         {/* Introduction text */}
-        <h1>React Unity WebGL Tests</h1>
-        <p>
-          In this React Application we'll explore the possibilities with the
-          React Unity WebGL Module. Use the built-in events, custom events,
-          mount, unmount, press the buttons and resize the view to see the magic
-          in action.
-        </p>
+        <Typography>
+          <Title style={styles.header}>Claim your rewards</Title>
+          
+          <Title style={styles.subheader}>Guardian NFT's</Title>
+          <Paragraph style={styles.content}>
+          The Amazon rainforest and all our communtity is grateful! You saved the forest and therefore prevented deforestation. Please accept your reward by minting a randomnized Protector of the Amazon.
+          </Paragraph>
+          </Typography>
         <button onClick={handleOnClickUnMountUnity}>(Un)mount Unity</button>
         {/* The Unity container */}
         {isUnityMounted === true && (

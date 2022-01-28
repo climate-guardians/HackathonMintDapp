@@ -22,7 +22,7 @@ import Cards from "components/Cards/Cards";
 import CardDetails from "components/Cards/CardDetails";
 import { Guardians } from "./components/Guardians";
 import { EmblaCarousel } from "./components/EmblaCarousel";
-import UnityForest from "components/WebGl/UnityForest";
+import Game from "components/Game";
 const { Header, Footer } = Layout;
 
 const SLIDE_COUNT = 20;
@@ -129,7 +129,7 @@ const App = ({ isServerInfo }) => {
               <Guardians />
             </Route>
             <Route path="/game">
-              <UnityForest />
+              <Game />
             </Route>
             <Route path="/rewards">
               <EmblaCarousel slides={slides}/>
@@ -151,37 +151,17 @@ const App = ({ isServerInfo }) => {
       </Router>
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
-          ⭐️ Please star this{" "}
+        See our Morails Avalanche Hackathon {" "}
           <a
-            href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
+            href="https://github.com/climate-warriors/MoralisAvaHack"
             target="_blank"
             rel="noopener noreferrer"
           >
-            boilerplate
-          </a>
-          , every star makes us very happy!
-        </Text>
-
-        <Text style={{ display: "block" }}>
-          🙋 You have questions? Ask them on the {""}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://forum.moralis.io/t/ethereum-boilerplate-questions/3951/29"
-          >
-            Moralis forum
+            Github Repo
           </a>
         </Text>
-
         <Text style={{ display: "block" }}>
-          📖 Read more about{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplat"
-          >
-            Moralis
-          </a>
+        Made with 💚 by Climate Guardians
         </Text>
       </Footer>
     </Layout>

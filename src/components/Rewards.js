@@ -1,8 +1,7 @@
 import EmblaCarousel from "./EmblaCarousel";
 
 function Rewards(slides) {
-  return (
-    
+  return (   
     <div>
       <EmblaCarousel slides={slides}/>
     </div>

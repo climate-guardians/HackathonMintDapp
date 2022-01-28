@@ -11,10 +11,12 @@ function MenuItems() {
       mode="horizontal"
       style={{
         display: "flex",
-        fontSize: "17px",
-        fontWeight: "500",
+        fontFamily: "archivo",
+        fontSize: "19px",
+        fontWeight: "800",
         width: "100%",
-        justifyContent: "center",
+        justifyContent: "left",
+        paddingLeft: "50px"
       }}
       defaultSelectedKeys={[pathname]}
     >
@@ -42,9 +44,9 @@ function MenuItems() {
       <Menu.Item key="/erc20transfers">
         <NavLink to="/erc20transfers">💸 Transfers</NavLink>
       </Menu.Item> */}
-      <Menu.Item key="/nftBalance">
+      {/* <Menu.Item key="/nftBalance">
         <NavLink to="/nftBalance">🚀 NFTs</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
       {/* <Menu.Item key="/1inch">
         <NavLink to="/1inch">🏦 Eco-Marketplace</NavLink>
       </Menu.Item> */}
