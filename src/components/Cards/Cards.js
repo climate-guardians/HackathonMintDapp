@@ -3,9 +3,9 @@ import "../../style.css";
 import { Route, Link } from "react-router-dom";
 import CardDetails from "./CardDetails"; 
 import {Helmet} from "react-helmet";
-import { Col, Row, Typography } from 'antd';
+import { Typography } from 'antd';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 const styles = {
   content: {
