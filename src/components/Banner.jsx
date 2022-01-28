@@ -8,6 +8,7 @@ export default function Banner() {
       backgroundRepeat:"no-repeat",
       backgroundPosition:'center',
       backgroundSize:"contain",
+      borderRadius: "9%",
       height:'40vw',
       width: '90vw' }}>
     </div>

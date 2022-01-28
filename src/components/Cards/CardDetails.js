@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { withRouter, Route, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getCards } from "../../redux/actions/cardsActions";
-import {Helmet} from "react-helmet"
+import { Helmet } from "react-helmet"
 
 function CardDetails(props) {
   const dispatch = useDispatch();
@@ -12,11 +12,12 @@ function CardDetails(props) {
   useEffect(() => {
     dispatch(getCards());
     let value = props.location.pathname
-      .replace("/details/ethereum-boilerplate/static/media/", "")
+      .replace("/details/static/media/", "")
       .split(".")[0];
     setImageValue(value);
     
   }, [dispatch, props.location.pathname]);
+
   return (
     <div style={{ paddingTop: "80px" }}>
       {state.map((val) =>

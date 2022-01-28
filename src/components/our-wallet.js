@@ -20,7 +20,7 @@ const OUR_WALLET_DATA = {
   title: 'The Official Amazon Protection NFT Game.',
   text:
     'In-game success reflects real world impact, allowing players to join the alliance to safeguard the amazon and strive for a decarbonized world.',
-  tagLine: '*Game is in development',
+  tagLine: '* Mobile Game is in development',
   options: [
     {
       icon: icon1,
@@ -52,7 +52,7 @@ const OUR_WALLET_DATA = {
     },
     {
       icon: button2,
-      label: 'PLay Store',
+      label: 'Play Store',
       link: '#',
     },
   ],
