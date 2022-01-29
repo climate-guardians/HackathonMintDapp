@@ -13,10 +13,11 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    aligntext: "center",
+    maxWidth: "600px",
+    textAlign: "center",
+    width: "100%",
     fontFamily: "archivo",
     fontSize: "20px",
-    textAlign: "center",
     color: "#041836",
     marginTop: "10px",
     padding: "15px",
@@ -96,7 +97,7 @@ const EmblaCarousel = ({ slides, options = { loop: true } }) => {
       
     <Title style={styles.subheader}>Guardian NFT's</Title>
     <Paragraph style={styles.content}>
-        The Amazon rainforest and our communtity is grateful! You saved the forest and therefore prevented deforestation. Please accept your reward by minting a randomnized Protector of the Amazon.
+        The Amazon rainforest and our community is grateful! You saved the forest and therefore prevented deforestation. Please accept your reward by minting a randomnized Protector of the Amazon💚
     </Paragraph>
     </Typography>
     
