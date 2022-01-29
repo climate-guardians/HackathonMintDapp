@@ -6,7 +6,7 @@ import { mediaByIndex } from "../assets/media";
 import { Typography, Button } from 'antd';
 import { NavLink } from "react-router-dom";
 
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
 const styles = {
   content: {
@@ -14,6 +14,7 @@ const styles = {
     justifyContent: "center",
     fontFamily: "archivo",
     fontSize: "20px",
+    textAlign: "center",
     color: "#041836",
     marginTop: "10px",
     padding: "15px",
@@ -90,9 +91,11 @@ const EmblaCarousel = ({ slides, options = { loop: true } }) => {
     
     <Typography>
     <Title style={styles.header}>Claim your rewards</Title>
-    
+      
     <Title style={styles.subheader}>Guardian NFT's</Title>
-  
+    <Paragraph style={styles.content}>
+        The Amazon rainforest and our communtity is grateful! You saved the forest and therefore prevented deforestation. Please accept your reward by minting a randomnized Protector of the Amazon.
+    </Paragraph>
     </Typography>
     
     <div className="embla">

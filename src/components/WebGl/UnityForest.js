@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import Unity, { UnityContext } from "react-unity-webgl";
 import { useMoralis } from "react-moralis";
-import { Typography} from 'antd';
+import { Typography, Button} from 'antd';
 
 const { Title, Paragraph } = Typography;
 
@@ -48,10 +48,13 @@ const styles = {
 };
 
 const unityContext = new UnityContext({
-  loaderUrl: "../public/forestBuild/forestUnity.loader.js",
-  dataUrl: "../public/forestBuild/forestUnity.data",
-  frameworkUrl: "../public/forestBuild/forestUnity.framework.js",
-  codeUrl: "../public/forestBuild/forestUnity.wasm",
+  loaderUrl: "forestBuild/Build/forestUnity.loader.js",
+  dataUrl: "forestBuild/Build/forestUnity.data",
+  frameworkUrl: "forestBuild/Build/forestUnity.framework.js",
+  codeUrl: "forestBuild/Build/forestUnity.wasm",
+  webglContextAttributes: {
+    preserveDrawingBuffer: true,
+  },
 });
 
 function UnityForest() {
@@ -103,14 +106,15 @@ function UnityForest() {
       <div className="wrapper">
         {/* Introduction text */}
         <Typography>
-          <Title style={styles.header}>Claim your rewards</Title>
+          <Title style={styles.header}>Battle!</Title>
           
-          <Title style={styles.subheader}>Guardian NFT's</Title>
+          <Title style={styles.subheader}>Lumberjack invasion</Title>
           <Paragraph style={styles.content}>
-          The Amazon rainforest and all our communtity is grateful! You saved the forest and therefore prevented deforestation. Please accept your reward by minting a randomnized Protector of the Amazon.
+          Naiara's village is under attack! Waves of Lumberjacks - send by evil corporations - are approaching. Corrupt politicians look the other way. No one to help, but you! Please, protect the village tree of life...
           </Paragraph>
           </Typography>
-        <button onClick={handleOnClickUnMountUnity}>(Un)mount Unity</button>
+        <Button primary onClick={handleOnClickUnMountUnity}>(Re)start Game</Button>
+        <br></br>
         {/* The Unity container */}
         {isUnityMounted === true && (
           <Fragment>
@@ -131,19 +135,11 @@ function UnityForest() {
             </div>
           </Fragment>
         )}
-        {/* <h6>
-          Made with love by{" "}
-          <a href="https://github.com/jeffreylanters">Jeffrey Lanters</a>
-        </h6> */}
       </div>
     </Fragment>
   );
 }
 
-  // return (
-  // <Unity unityContext={unityContext} />
-  //   );
-  // }
 
 
 
