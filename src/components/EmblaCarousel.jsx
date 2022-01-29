@@ -3,8 +3,8 @@ import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { mediaByIndex } from "../assets/media";
-import { Typography, Button } from 'antd';
-import { NavLink } from "react-router-dom";
+import { Typography } from 'antd';
+import MintReward from "./MintReward";
 
 const { Title, Paragraph } = Typography;
 
@@ -12,6 +12,8 @@ const styles = {
   content: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
+    aligntext: "center",
     fontFamily: "archivo",
     fontSize: "20px",
     textAlign: "center",
@@ -118,9 +120,7 @@ const EmblaCarousel = ({ slides, options = { loop: true } }) => {
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
     </div>
       <div className="wrapper">
-        <Button type="primary">
-          <NavLink to="/nftBalance">Check your NFTs</NavLink>
-        </Button>
+        <MintReward />
       </div>
     </div>
     </>

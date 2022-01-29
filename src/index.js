@@ -14,6 +14,9 @@ const store = configureStore();
 
 const APP_ID = process.env.REACT_APP_MORALIS_APPLICATION_ID;
 const SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL;
+// const masterKey = process.env.MORALIS_API_MASTERKEY;
+// const xAPIKey = process.env.MORALIS_XAPI_KEY;
+// const api_url = process.env.MORAILS_API_URL;
 
 const Application = () => {
   const isServerInfo = APP_ID && SERVER_URL ? true : false;

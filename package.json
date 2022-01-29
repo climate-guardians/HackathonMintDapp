@@ -13,7 +13,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@walletconnect/web3-provider": "^1.6.6",
+    "all": "^0.0.0",
     "antd": "^4.16.13",
+    "axios": "^0.23.0",
+    "canvas": "^2.8.0",
     "embla-carousel-autoplay": "^6.0.2",
     "embla-carousel-react": "^6.0.2",
     "moralis": "^0.0.135",
@@ -38,6 +41,7 @@
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
+    "request": "^2.88.2",
     "theme-ui": "^0.6.1",
     "web-vitals": "^1.0.1",
     "yarn": "^1.22.17"

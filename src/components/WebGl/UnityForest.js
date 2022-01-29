@@ -100,6 +100,10 @@ function UnityForest() {
     setIsUnityMounted(isUnityMounted === false);
   }
 
+  function handleOnClickFullscreen() {
+    unityContext.setFullscreen(true);
+  }
+     
   // This is the React component that will be rendering the Unity app.
   return (
     <Fragment>
@@ -110,10 +114,11 @@ function UnityForest() {
           
           <Title style={styles.subheader}>Lumberjack invasion</Title>
           <Paragraph style={styles.content}>
-          Naiara's village is under attack! Waves of Lumberjacks - send by evil corporations - are approaching. Corrupt politicians look the other way. No one to help, but you! Please, protect the village tree of life...
+          Naiara's village is under attack! Waves of Lumberjacks - send by evil corporations - are approaching. Corrupt politicians look the other way. No one to help, but you! Please, protect the life chrystal under the village tree...
           </Paragraph>
           </Typography>
         <Button primary onClick={handleOnClickUnMountUnity}>(Re)start Game</Button>
+        <Button primary onClick={() => handleOnClickFullscreen()}>Fullscreen</Button>
         <br></br>
         {/* The Unity container */}
         {isUnityMounted === true && (
