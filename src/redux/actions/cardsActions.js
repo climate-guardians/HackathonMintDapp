@@ -1,5 +1,4 @@
 import * as actionTypes from "./actionTypes";
-import details from "./cards.json"
 
 export function getCardsSuccess(cards) {
   return {
@@ -17,9 +16,11 @@ export function getCards() {
 
     // let url = "https://royaleapi.github.io/cr-api-data/json/cards.json";
     // return fetch(url)
-    details.map
-      .then((response) => response.json())
-      .then((result) => dispatch(getCardsSuccess(result)))
+    let cardsData = "/data.json"
+    return fetch(cardsData)
+
+    .then((response) => response.json())
+    .then((result) => dispatch(getCardsSuccess(result)))
   };
 }
 

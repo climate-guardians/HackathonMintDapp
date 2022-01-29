@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { withRouter, Route, Link } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getCards } from "../../redux/actions/cardsActions";
 import { Helmet } from "react-helmet"
+import { Button } from "antd";
+
 
 function CardDetails(props) {
   const dispatch = useDispatch();
@@ -46,12 +48,13 @@ function CardDetails(props) {
             <p>
               <span>Rarity</span> : {val.rarity}
             </p>
-            <p>
+            {/* <p>
               <span>Arena</span> : {val.arena}
-            </p>
-            <Route>
-              <Link to="/cards">Back to Cards</Link>
-            </Route>
+            </p> */}
+            <Button type="primary">
+              <NavLink to="/cards">Back to Cards</NavLink>
+            </Button>
+            <br/>
           </div>
         ) : null
       )}

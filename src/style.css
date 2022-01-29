@@ -63,13 +63,15 @@
   color: green;
   text-decoration: none;
   font-size: 20px;
+  margin-top: "10px";
+  margin-bottom: "10px";
 }
-.card-details a:hover {
+/* .card-details a:hover {
   cursor: pointer;
   font-size: 25px;
   transition: all 0.3s;
   color: red;
-}
+} */
 
 /* EmblaCarrousel */
 .embla {
