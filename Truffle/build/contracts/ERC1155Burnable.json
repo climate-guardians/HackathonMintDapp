@@ -374,10 +374,10 @@
     "absolutePath": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
     "exportedSymbols": {
       "Address": [
-        1836
+        2828
       ],
       "Context": [
-        1858
+        2850
       ],
       "ERC1155": [
         1292
@@ -386,7 +386,7 @@
         1524
       ],
       "ERC165": [
-        1882
+        3151
       ],
       "IERC1155": [
         1414
@@ -398,7 +398,7 @@
         1455
       ],
       "IERC165": [
-        1894
+        3163
       ]
     },
     "id": 1525,
@@ -448,9 +448,9 @@
           1292,
           1414,
           1539,
-          1858,
-          1882,
-          1894
+          2850,
+          3151,
+          3163
         ],
         "contractKind": "contract",
         "documentation": {
@@ -466,9 +466,9 @@
           1292,
           1539,
           1414,
-          1882,
-          1894,
-          1858
+          3151,
+          3163,
+          2850
         ],
         "name": "ERC1155Burnable",
         "nameLocation": "360:15:5",
@@ -525,7 +525,7 @@
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1848,
+                              "referencedDeclaration": 2840,
                               "src": "538:10:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -577,7 +577,7 @@
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1848,
+                                "referencedDeclaration": 2840,
                                 "src": "580:10:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -951,7 +951,7 @@
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1848,
+                              "referencedDeclaration": 2840,
                               "src": "879:10:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1003,7 +1003,7 @@
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1848,
+                                "referencedDeclaration": 2840,
                                 "src": "921:10:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1355,10 +1355,10 @@
     "absolutePath": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
     "exportedSymbols": {
       "Address": [
-        1836
+        2828
       ],
       "Context": [
-        1858
+        2850
       ],
       "ERC1155": [
         1292
@@ -1367,7 +1367,7 @@
         1524
       ],
       "ERC165": [
-        1882
+        3151
       ],
       "IERC1155": [
         1414
@@ -1379,7 +1379,7 @@
         1455
       ],
       "IERC165": [
-        1894
+        3163
       ]
     },
     "id": 1525,
@@ -1429,9 +1429,9 @@
           1292,
           1414,
           1539,
-          1858,
-          1882,
-          1894
+          2850,
+          3151,
+          3163
         ],
         "contractKind": "contract",
         "documentation": {
@@ -1447,9 +1447,9 @@
           1292,
           1539,
           1414,
-          1882,
-          1894,
-          1858
+          3151,
+          3163,
+          2850
         ],
         "name": "ERC1155Burnable",
         "nameLocation": "360:15:5",
@@ -1506,7 +1506,7 @@
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1848,
+                              "referencedDeclaration": 2840,
                               "src": "538:10:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1558,7 +1558,7 @@
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1848,
+                                "referencedDeclaration": 2840,
                                 "src": "580:10:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1932,7 +1932,7 @@
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1848,
+                              "referencedDeclaration": 2840,
                               "src": "879:10:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1984,7 +1984,7 @@
                                 "name": "_msgSender",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1848,
+                                "referencedDeclaration": 2840,
                                 "src": "921:10:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -2338,7 +2338,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-29T19:41:41.569Z",
+  "updatedAt": "2022-01-31T12:50:09.933Z",
   "devdoc": {
     "details": "Extension of {ERC1155} that allows token holders to destroy both their own tokens and those that they have been approved to use. _Available since v3.1._",
     "kind": "dev",

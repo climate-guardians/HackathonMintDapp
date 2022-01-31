@@ -21,7 +21,7 @@ const styles = {
 
 function NFTBalance() {
   const { data: NFTBalances } = useNFTBalances();
-  const { Moralis, chainId } = useMoralis();
+  const { Moralis, chainId } = useMoralis(0x4);
   const [visible, setVisibility] = useState(false);
   const [receiverToSend, setReceiver] = useState(null);
   const [amountToSend, setAmount] = useState(null);

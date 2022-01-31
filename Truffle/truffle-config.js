@@ -65,14 +65,14 @@ module.exports = {
     timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
-    fuji: {
-      provider: () => new HDWalletProvider(mnemonic, `https://speedy-nodes-nyc.moralis.io/36a8fcf250a48152c0252a18/avalanche/testnet`),
-      network_id: 43113,       // Fuji's id
-      gas: 5500000,        
-      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-      },
+    // fuji: {
+    //   provider: () => new HDWalletProvider(mnemonic, `https://speedy-nodes-nyc.moralis.io/36a8fcf250a48152c0252a18/avalanche/testnet`),
+    //   network_id: 0xa869,       // Fuji's id  43113
+    //   gas: 5500000,        
+    //   confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+    //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+    //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    //   },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

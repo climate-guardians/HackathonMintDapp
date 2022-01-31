@@ -116,7 +116,7 @@
         1455
       ],
       "IERC165": [
-        1894
+        3163
       ]
     },
     "id": 1456,
@@ -141,7 +141,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1456,
-        "sourceUnit": 1895,
+        "sourceUnit": 3164,
         "src": "128:47:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -154,7 +154,7 @@
               "id": 1419,
               "name": "IERC165",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1894,
+              "referencedDeclaration": 3163,
               "src": "247:7:4"
             },
             "id": 1420,
@@ -163,7 +163,7 @@
           }
         ],
         "contractDependencies": [
-          1894
+          3163
         ],
         "contractKind": "interface",
         "documentation": {
@@ -176,7 +176,7 @@
         "id": 1455,
         "linearizedBaseContracts": [
           1455,
-          1894
+          3163
         ],
         "name": "IERC1155Receiver",
         "nameLocation": "227:16:4",
@@ -612,7 +612,7 @@
         1455
       ],
       "IERC165": [
-        1894
+        3163
       ]
     },
     "id": 1456,
@@ -637,7 +637,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1456,
-        "sourceUnit": 1895,
+        "sourceUnit": 3164,
         "src": "128:47:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -650,7 +650,7 @@
               "id": 1419,
               "name": "IERC165",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1894,
+              "referencedDeclaration": 3163,
               "src": "247:7:4"
             },
             "id": 1420,
@@ -659,7 +659,7 @@
           }
         ],
         "contractDependencies": [
-          1894
+          3163
         ],
         "contractKind": "interface",
         "documentation": {
@@ -672,7 +672,7 @@
         "id": 1455,
         "linearizedBaseContracts": [
           1455,
-          1894
+          3163
         ],
         "name": "IERC1155Receiver",
         "nameLocation": "227:16:4",
@@ -1107,7 +1107,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-29T19:41:41.565Z",
+  "updatedAt": "2022-01-31T12:50:09.925Z",
   "devdoc": {
     "details": "_Available since v3.1._",
     "kind": "dev",
