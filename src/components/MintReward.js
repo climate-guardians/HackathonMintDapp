@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Button, Card, Modal } from 'antd';
 import { useWeb3ExecuteFunction } from "react-moralis";
 import { useMoralis } from "react-moralis";
