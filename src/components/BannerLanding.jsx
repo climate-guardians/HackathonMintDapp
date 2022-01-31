@@ -68,7 +68,7 @@ export default function BannerLanding() {
           <Box sx={styles.btnWrap}>
             <div>
             <Heading as="h1">{subtitle}</Heading>
-              <Button shape="round" onClick={() => donation(0.1)}>Donate 0.1 ETH</Button>
+              <Button shape="round" onClick={() => donation(0.1)}>Donate 0.1 AVAX</Button>
               <a 
               // href={`https://rinkeby.etherscan.io/address/0xCc4D0600885c69Fdba19De5A54957dF939459254`}
               href={`https://testnet.snowtrace.io/tx/0x07e73694ac495e821675ae1438f5eed3f0f3d7861f8a86a89b4470a38f5baa6f`}
