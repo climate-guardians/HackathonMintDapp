@@ -1,9 +1,9 @@
+import { useState, useEffect } from "react";
 import { Button, Card, Modal } from 'antd';
-import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
+import { useWeb3ExecuteFunction } from "react-moralis";
+import { useMoralis } from "react-moralis";
 import { SelectOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
-// import climateHeroAbi from "../contracts/ClimateHero";
-
 
 export default function MintReward() {
   const { Moralis } = useMoralis();
@@ -13,7 +13,7 @@ export default function MintReward() {
     
    let options = {
       contractAddress: "0x879E79D9b3ca5CEf801183480ee74523EA6776B7",
-      functionName: "mint",
+      functionName: "safeMint",
       abi: [
         {
           "inputs": [],
@@ -417,8 +417,7 @@ export default function MintReward() {
         }
       ],
       params: {
-        id: "0",
-        amount: "1",
+        to: "0xfaCf80613100c7dF2D29Fc9293a6BDbf045C60c2",
       },
       msgValue: Moralis.Units.ETH(val)
       }

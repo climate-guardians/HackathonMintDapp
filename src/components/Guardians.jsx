@@ -672,7 +672,7 @@ export default function Guardians() {
     
         let options = {
            //contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
-      contractAddress: "0xAB0d857D6A9D6ce53A099561D054A731acEE6B0E",
+          contractAddress: "0xAB0d857D6A9D6ce53A099561D054A731acEE6B0E",
            functionName: "mint",
            abi: ABI,
            params: {
@@ -690,7 +690,7 @@ export default function Guardians() {
              let secondsToGo = 3;
              const modal = Modal.success({
                title: "Success...", 
-               content: `Are mad? You minted another villain!`,
+               content: `Are you mad? You minted another villain!`,
              });
              setTimeout(() => {
                modal.destroy();

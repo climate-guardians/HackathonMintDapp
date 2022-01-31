@@ -2338,7 +2338,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-31T12:50:09.933Z",
+  "updatedAt": "2022-01-31T18:17:45.935Z",
   "devdoc": {
     "details": "Extension of {ERC1155} that allows token holders to destroy both their own tokens and those that they have been approved to use. _Available since v3.1._",
     "kind": "dev",

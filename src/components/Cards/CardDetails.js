@@ -54,6 +54,9 @@ function CardDetails(props) {
             <Button type="primary">
               <NavLink to="/cards">Back to Cards</NavLink>
             </Button>
+            <Button type="primary">
+              <NavLink to="/game">⚔️ Defend your Tree!</NavLink>
+            </Button>
             <br/>
           </div>
         ) : null
