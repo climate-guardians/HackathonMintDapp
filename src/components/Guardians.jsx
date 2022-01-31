@@ -607,7 +607,8 @@ export default function Guardians() {
   async function mintCurupira(val){
     
    let options = {
-      contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+      //contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+      contractAddress: "0xAB0d857D6A9D6ce53A099561D054A731acEE6B0E",
       functionName: "mint",
       abi: ABI,
       params: {
@@ -617,7 +618,7 @@ export default function Guardians() {
         // data: "",
       },
       msgValue: Moralis.Units.ETH(val)
-    }
+      }
 
       await contractProcessor.fetch({
         params: options,
@@ -638,7 +639,8 @@ export default function Guardians() {
     async function mintNaiara(val){
     
       let options = {
-         contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+         //contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+         contractAddress: "0xAB0d857D6A9D6ce53A099561D054A731acEE6B0E",
          functionName: "mint",
          abi: ABI,
          params: {
@@ -669,7 +671,8 @@ export default function Guardians() {
        async function mintBolso(val){
     
         let options = {
-           contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+           //contractAddress: "0x190C5D8838072396A75B8cBA622a2C943c29fa08",
+      contractAddress: "0xAB0d857D6A9D6ce53A099561D054A731acEE6B0E",
            functionName: "mint",
            abi: ABI,
            params: {
@@ -735,12 +738,12 @@ export default function Guardians() {
               <Button onClick={() => mintBolso(0.1)} type="primary">Mint & Play</Button>
               <div style={{ marginBottom: "10px" }}>
                 <a 
-                  href={`https://rinkeby.etherscan.io/address/0x190C5D8838072396A75B8cBA622a2C943c29fa08`}
+                  href={`https://testnet.snowtrace.io/address/0xab0d857d6a9d6ce53a099561d054a731acee6b0e`}
                   target="_blank"
                   rel="noreferrer"
                   >
                   <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
-                  View on Etherscan
+                  View on Snowtrace
                 </a>
                 <div style={{ marginBottom: "10px" }}>
                 <a 
@@ -766,12 +769,12 @@ export default function Guardians() {
             <Button onClick={() => mintCurupira(0.1)} type="primary">Mint & Play</Button>
               <div style={{ marginBottom: "10px" }}>
                 <a 
-                  href={`https://rinkeby.etherscan.io/address/0x190c5d8838072396a75b8cba622a2c943c29fa08/0`}
+                  href={`https://testnet.snowtrace.io/address/0xab0d857d6a9d6ce53a099561d054a731acee6b0e`}
                   target="_blank"
                   rel="noreferrer"
                   >
                   <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
-                  View on Etherscan
+                  View on Snowtrace
                 </a>
               </div>
               <div style={{ marginBottom: "10px" }}>
@@ -796,12 +799,12 @@ export default function Guardians() {
               <Button onClick={() => mintNaiara(0.1)} type="primary">Mint & Play</Button> 
             <div style={{ marginBottom: "10px" }}>
               <a 
-                href={`https://rinkeby.etherscan.io/address/0x190c5d8838072396a75b8cba622a2c943c29fa08/1`}
+                href={`https://testnet.snowtrace.io/address/0xab0d857d6a9d6ce53a099561d054a731acee6b0e`}
                 target="_blank"
                 rel="noreferrer"
                 >
                 <SelectOutlined style={{ marginRight: "5px", marginTop: "5px" }} />
-                View on Etherscan
+                View on Snowtrace
               </a>
             </div>
             <div style={{ marginBottom: "10px" }}>

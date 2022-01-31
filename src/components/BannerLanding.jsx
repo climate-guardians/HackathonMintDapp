@@ -31,7 +31,8 @@ export default function BannerLanding() {
 
     //Moralis Donation Logic
     let options = {
-      contractAddress: "0xCc4D0600885c69Fdba19De5A54957dF939459254",
+      // contractAddress: "0xCc4D0600885c69Fdba19De5A54957dF939459254",
+      contractAddress: "0x79f9e5ca1B23ce86970557EE003CcA5680EB200a",
       functionName: "newDonation",
       abi: [{"inputs":[{"internalType":"string","name":"note","type":"string"}],"name":"newDonation","outputs":[],"stateMutability":"payable","type":"function"}],
       params: {
@@ -69,12 +70,13 @@ export default function BannerLanding() {
             <Heading as="h1">{subtitle}</Heading>
               <Button shape="round" onClick={() => donation(0.1)}>Donate 0.1 ETH</Button>
               <a 
-              href={`https://rinkeby.etherscan.io/address/0xCc4D0600885c69Fdba19De5A54957dF939459254`}
+              // href={`https://rinkeby.etherscan.io/address/0xCc4D0600885c69Fdba19De5A54957dF939459254`}
+              href={`https://https://testnet.snowtrace.io/address/0x79f9e5ca1B23ce86970557EE003CcA5680EB200a`}
               target="_blank"
               rel="noreferrer"
               >
               <SelectOutlined style={{ marginLeft: "5px" }} />
-              View on Etherscan
+              View on Snowtrace
               </a>
             </div>
           </Box>
