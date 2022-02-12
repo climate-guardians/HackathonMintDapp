@@ -4,8 +4,10 @@ import { Button, Modal } from "antd";
 import { SelectOutlined } from "@ant-design/icons";
 import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
 import BannerImage from "../img/curupira.png";
+import { Follow } from 'react-twitter-widgets';
+
 const BANNER_DATA = {
-  title: 'Welcome to Climate Guardians',
+  title: 'Welcome Climate Guardians',
   text:
     'The play and earn Game with real world impact on Climate Change.',
   subtitle: 'Save the Amazon',
@@ -64,7 +66,8 @@ export default function BannerLanding() {
       <Container sx={styles.container}>
         <Box sx={styles.content}>
           <Heading as="h1">{title}</Heading>
-          <Text as="p">{text}</Text>
+          <Follow username="ClimateGuards" options={{ size: "large" }} />
+          <Text as="p">{text}</Text> 
           <Box sx={styles.btnWrap}>
             <div>
             <Heading as="h1">{subtitle}</Heading>
