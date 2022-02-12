@@ -66,8 +66,8 @@ export default function BannerLanding() {
       <Container sx={styles.container}>
         <Box sx={styles.content}>
           <Heading as="h1">{title}</Heading>
-          <Follow username="ClimateGuards" options={{ size: "large" }} />
           <Text as="p">{text}</Text> 
+          <Follow username="ClimateGuards" options={{ size: "large" }} />
           <Box sx={styles.btnWrap}>
             <div>
             <Heading as="h1">{subtitle}</Heading>

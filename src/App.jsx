@@ -23,9 +23,6 @@ import CardDetails from "components/Cards/CardDetails";
 import { Guardians } from "./components/Guardians";
 import { EmblaCarousel } from "./components/EmblaCarousel";
 import Game from "components/Game";
-import { Tweet } from 'react-twitter-widgets';
-
-
 
 const { Header, Footer } = Layout;
 
@@ -154,10 +151,6 @@ const App = ({ isServerInfo }) => {
           </Switch>
         </div>
       </Router>
-      <Tweet 
-        tweetId="1481984297917718529"  
-        options={{ align: "center", width: "200 "}}
-        />
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
         See our Morails Avalanche Hackathon {" "}
