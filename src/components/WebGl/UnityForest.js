@@ -48,10 +48,10 @@ const styles = {
 };
 
 const unityContext = new UnityContext({
-  loaderUrl: "forestBuild/Build/forestUnity.loader.js",
-  dataUrl: "forestBuild/Build/forestUnity.data",
-  frameworkUrl: "forestBuild/Build/forestUnity.framework.js",
-  codeUrl: "forestBuild/Build/forestUnity.wasm",
+  loaderUrl: "forestBuild/Build/LumberJackBuild.loader.js",
+  dataUrl: "forestBuild/Build/LumberJackBuild.data",
+  frameworkUrl: "forestBuild/Build/LumberJackBuild.framework.js",
+  codeUrl: "forestBuild/Build/LumberJackBuild.wasm",
   webglContextAttributes: {
     preserveDrawingBuffer: true,
   },
